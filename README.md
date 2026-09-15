@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Tele Agent
 
 **A production-minded Telegram operations assistant for Indian kirana and supermarket businesses.**
@@ -253,3 +254,7 @@ tests/         Unit and integration-oriented tests
 ## License
 
 No license has been declared yet. Add a license before distributing this project publicly or accepting external contributions.
+=======
+# MartDash_Agent
+Agent will to moitoring all the services in supermarket  like as Billing ,Stock avilablity check througj telegram.
+>>>>>>> bf32c2b44636217660e25c80bb51206396626023
