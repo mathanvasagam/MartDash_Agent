@@ -1,0 +1,12 @@
+mistralai>=1.9.0
+python-telegram-bot>=21.10
+SQLAlchemy>=2.0.36
+psycopg[binary]>=3.2.3
+pydantic-settings>=2.7.1
+tenacity>=9.0.0
+reportlab>=4.2.5
+python-pptx>=1.0.2
+matplotlib>=3.10.0
+pytest>=8.3.4
+pytest-cov>=6.0.0
+ruff>=0.9.0
