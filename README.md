@@ -214,21 +214,6 @@ ruff check .
 
 The tests cover GST rounding, product retrieval and ambiguity handling, stock guards, multi-turn billing, finalization idempotency, khata rules, preferences, and generated documents.
 
-Before production launch, run an end-to-end concurrent-finalization test against a dedicated PostgreSQL staging database. Do not run mutation tests against a live production database.
-
-## Production Checklist
-
-- [ ] Set `APP_ENV=production`
-- [ ] Use a dedicated PostgreSQL database
-- [ ] Store secrets in the deployment platform's secret manager
-- [ ] Configure `GROQ_API_KEY` and `TELEGRAM_BOT_TOKEN`
-- [ ] Run migrations or table creation through the deployment process
-- [ ] Seed or import the approved catalog
-- [ ] Run `pytest -q` and `ruff check .`
-- [ ] Test Telegram commands and document delivery in staging
-- [ ] Verify PostgreSQL concurrent finalization in staging
-- [ ] Configure process supervision and log collection
-- [ ] Back up the database and generated business documents
 
 ## Project Structure
 
@@ -249,7 +234,3 @@ tests/         Unit and integration-oriented tests
 - Use a separate staging database for integration and concurrency testing.
 - Review catalog data and GST rates before using the system for real transactions.
 - Restrict database credentials to the minimum permissions required by the deployment.
-
-## License
-
-No license has been declared yet. Add a license before distributing this project publicly or accepting external contributions.
